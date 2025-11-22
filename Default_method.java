@@ -32,7 +32,19 @@ class MySmartPhone extends MyCellPhone implements wifi,Camera
     }
     public void recordVideo()
     {
-        
+        System.out.println("Recording video...");
+    }
+
+    public String[] getNtworks()
+    {
+        System.out.println("Getting available networks...");
+        String[] networks = {"Network1", "Network2", "Network3"};
+        return networks;
+    }
+
+    public void connectToNetwork(String network)
+    {
+        System.out.println("Connecting to " + network + "...");
     }
 }
 
